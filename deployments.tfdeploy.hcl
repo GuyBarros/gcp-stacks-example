@@ -8,9 +8,9 @@ identity_token "gcp" {
 
 deployment "us-central1" {
   variables = {
-    audience               = "//iam.googleapis.com/projects/645576693893/locations/global/workloadIdentityPools/wi-pool-gcp-stacks-example/providers/wi-provider-gcp-stacks-example"
+    audience               = "//iam.googleapis.com/projects/887081825965/locations/global/workloadIdentityPools/guy-wi-pool-gcp-stacks/providers/guy-wi-provider-gcp-stacks"
     identity_token_file    = identity_token.gcp.jwt_filename
-    project_id             = "hc-29579e5195844c62ac880f9222b"
+    project_id             = "projects/hc-29579e5195844c62ac880f9222b"
     service_account_email  = "guy-gcp-stacks@hc-29579e5195844c62ac880f9222b.iam.gserviceaccount.com"
     region                 = "us-central1"
   }
