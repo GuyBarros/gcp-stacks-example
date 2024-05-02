@@ -17,14 +17,14 @@ variable "tfc_organization_name" {
 
 variable "tfc_project_name" {
   type        = string
-  default     = "stacks"
+  default     = "guy-stacks"
   description = "The project under which a workspace will be created"
 }
 
 variable "tfc_workspace_name" {
   type        = string
   description = "The name of the workspace that you'd like to create and connect to GCP"
-  default     = "tfc-gcp-wi-demo"
+  default     = "guy-tfc-gcp-wi-demo"
 }
 
 variable "gcp_project_id" {
@@ -33,15 +33,15 @@ variable "gcp_project_id" {
 }
 variable "service_account_id" {
   type    = string
-  default = "gcp-stacks-example"
+  default = "guy-gcp-stacks"
 }
 
 variable "workload_identity_pool_id" {
   type    = string
-  default = "wi-pool-gcp-stacks-example"
+  default = "guy-wi-pool-gcp-stacks"
 }
 
 variable "workload_identity_pool_provider_id" {
   type    = string
-  default = "wi-provider-gcp-stacks-example"
+  default = "guy-wi-provider-gcp-stacks"
 }
