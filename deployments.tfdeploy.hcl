@@ -14,6 +14,7 @@ deployment "us-central1" {
     service_account_email  = "guy-gcp-stacks@hc-29579e5195844c62ac880f9222b.iam.gserviceaccount.com"
     region                 = "us-central1"
   }
+}
 
  deployment "new-deployment" {
   variables = {
